@@ -6,41 +6,55 @@ var game = {
     levels: {
 
         start: {
-            message: "You come across a dark cave",
+            message: "Where shall you go for Date Night?",
             choices: [
                 {
-                    text: "Enter the cave",
-                    nextLevel: "cave",
+                    text: "Go to the Movies",
+                    nextLevel: "Movies",
                 },
 
                 {
-                    text: "Keep on moving",
-                    nextLevel: "field",
+                    text: "Romantic Dinner",
+                    nextLevel: "Resturants",
                 },
             ]
         },
 
-        cave: {
+        Movies: {
             background_image: "fire.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            message: "What Movie shall you watch?",
             choices: [
                 {
-                    text: "Start over",
-                    nextLevel: "start",
+                    text: "Funny Movie",
+                    nextLevel: "Laugh",
+                },
+                 {
+                    text: "Documentary",
+                    nextLevel: "Boring",
                 },
             ]
         },
 
-        field: {
-            message: "Some adventurer you are...",
+        Resturant: {
+            message: "Where shall you go?",
             choices: [
                 {
-                    text: "Start over",
-                    nextLevel: "start",
+                    text: "McDanalds",
+                    nextLevel: "Date Successful",
+                },
+                 {
+                    text: "Olive Garden",
+                    nextLevel: "Enjoy Meal",
                 },
             ]
         },
-
-    }
-};
+ Laugh: {
+            message: "You and your date laughed too much and got kicked out",
+            choices: [
+                {
+                    text: "Date Night Ruined",
+                    nextLevel: "Start",
+                },
+            ]
+},
